@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(/images/fondo-opcion1.png) no-repeat;
+    background: url(./images/fondo-opcion1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
