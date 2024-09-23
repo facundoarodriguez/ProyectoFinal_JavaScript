@@ -48,13 +48,12 @@
     height: 40px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .loginbody form input::placeholder{
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
-    left: 10px;
 }
 
 .loginbody form .title{
@@ -85,7 +84,7 @@
 }
 
 .loginbody form label input{
-    padding: 0 5px;
+    padding: 0 20px;
     font-size: 18px;
 }
 
