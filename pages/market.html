@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Cult Club | Market</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section1">
+            <h1>Bienvenido a la tienda oficial de Owl Cult Club</h1>
+            <p>Accede a todos nuestros productos originales, que no son traidos de Avellaneda</p>
+        </section>
+        <div id="cotizacionBlue" class="cotizacionBlue">
+            <h3>Cotización Dolar Blue Argentina</h3>
+            <div id="dolarBlueContainer" class="dolarDiv">
+                <p>Compra: <span id="compraBlue"></span></p>
+                <p>Venta: <span id="ventaBlue"></span></p>
+            </div>
+        </div>
+        
+        <section class="contenedorMarket">
+            <section id="cart">
+                <h2>Tus productos se mostrarán aquí</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button class="add-to-cart" id="pay" class="desvanecer">Pagar</button>
+            </section>
+        </section>
+    </main>
+    <script src="../market.js"></script>
+</body>
+</html>

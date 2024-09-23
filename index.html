@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Cult Club | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="loginbody">
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div id="inicio-banner" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Owl Cult Club</h1>
+        </div>
+        <div class="tarjeta-inicio" >
+            <form action="">
+                <h1 class="title">Bienvenido<span id="cursor">_</span></h1>
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    <input placeholder="usuario" type="text" id="username">
+                </label>
+                <label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input placeholder="contraseña" type="password" id="password">
+                </label>
+                <a href="#" class="link">Olvidaste tu contraseña?</a>
+                <button id="register-button">Registrarse</button>
+                <button id="login-button">Acceder</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor de notificación -->
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

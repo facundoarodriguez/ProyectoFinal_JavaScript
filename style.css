@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Banner de inicio */
+#inicio-banner {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+
+/* login body */
+.loginbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(/images/fondo-opcion1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta-inicio{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.loginbody form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 25px;
+}
+
+.loginbody form input{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 270px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+}
+
+.loginbody form input::placeholder{
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+.loginbody form .title{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#cursor {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#cursor.visible {
+    opacity: 0;
+}
+
+
+.loginbody form label{
+    margin-bottom: 20px;
+}
+
+.loginbody form label .fa-solid{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.loginbody form label input{
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.loginbody form .link{
+    color:rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.loginbody form button{
+    color: rgb(0, 0, 0);
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    background-color:#ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.4s;
+    margin: 10px
+}
+
+.loginbody form button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #273746;
+}
+
+nav {
+    background-color: #000;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.20);
+}
+
+.section1{
+    text-align: center;
+    background-color: #babec0;
+}
+
+.section1 h1{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.section1 p{
+    padding: 10px;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.notification.success {
+    background-color: #4CAF50;
+}
+
+.notification.visible {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Pagina de Market */
+.cotizacionBlue{
+    background-color: #babec0;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.cotizacionBlue h3{
+    padding-top: 1rem;
+}
+
+.dolarDiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dolarDiv p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contenedorMarket{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedorMarket .product .add-to-cart{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color:#273746;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: color 0.3s ease, transform 0.3s;
+}
+
+.contenedorMarket .product .add-to-cart:hover{
+    transform: scale(1.2);
+}
+
+.contenedorMarket div{
+    text-align: center;
+    width: 450px;
+    padding: 3rem 0 3rem 0;
+    margin: 1rem;
+    border-radius: 5px;
+    background-image: url('images/backgr.png');
+    transition: all 0.3s;
+}
+
+.contenedorMarket #cart{
+    background-color: #babec0;
+    text-align: center;
+    width: 100vmax;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.contenedorMarket #cart h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.contenedorMarket #cart button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenedorMarket div:hover{
+    box-shadow: 0 10px 20px black;
+}
+
+.contenedorMarket div img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.contenedorMarket div h3{
+    margin-top: 2rem;
+    color: black;
+}
+
+.contenedorMarket div p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.contenedorMarket div a{
+    border: solid #0F0F0F;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.contenedorMarket div a:hover{
+    background-color: #0F0F0F;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight:600;
+}
+
+#cart p{
+    font-weight: 800;
+}
+
+#cart button{
+    color: white;
+    border: none;
+    background-color:#273746;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#cart-items button {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s;
+}
+
+#cart button:hover{
+    transform: scale(1.2);
+}
+
+#cart-items button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.desvanecer{
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.notification2 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-weight: bold;
+}
+
+/* sweet alert */
+.swaltitle{
+    color: black;
+}
+
+.swaltext{
+    color: black;
+}
+
+.swaltext2{
+    color: red;
+}
